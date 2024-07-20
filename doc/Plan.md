@@ -41,3 +41,8 @@
   * Veiw transaction history from account
   * Create an account
   * Create a bank account
+  * Delete an account
+  * Delete a bank account
+  * Register a new bank account
+  * Login to bank account
+
