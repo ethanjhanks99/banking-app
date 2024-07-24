@@ -46,3 +46,9 @@
   * Register a new bank account
   * Login to bank account
 
+## Phase 1: Design
+
+* Using SQLite3 with C++
+  * Use `#include <sqlite3.h>`
+  * [Link to examples](https://www.geeksforgeeks.org/sql-using-c-c-and-sqlite/)
+  * [Link to SQL commands](https://www.sqlitetutorial.net/sqlite-cheat-sheet/)
