@@ -5,7 +5,6 @@
 * Basic requirements
   * Tools
     * This program will use SQLlite to store data
-    * This program will use a authentication/authorization system that I build
     * This program will use git for version control
   * As a user, I should be able to...
     * register a bank account
@@ -52,3 +51,19 @@
   * Use `#include <sqlite3.h>`
   * [Link to examples](https://www.geeksforgeeks.org/sql-using-c-c-and-sqlite/)
   * [Link to SQL commands](https://www.sqlitetutorial.net/sqlite-cheat-sheet/)
+
+### Authentication and Authorization
+
+* Authentication and Authorization will be implemented by two separate methods: one for registering an account, and one for logging into an account
+* SQLite will be used to manage user data and session information
+
+#### Register
+
+* Information required for an account:
+  * First name
+  * Last name
+  * Username
+  * Password
+  * Email
+  * SSN
+
