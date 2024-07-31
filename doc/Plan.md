@@ -66,4 +66,5 @@
   * Password
   * Email
   * SSN
-
+* Password and SSN will be hashed to protect privacy in the event of a data leak
+* 
