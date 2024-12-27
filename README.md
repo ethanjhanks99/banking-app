@@ -1,4 +1,4 @@
-# C++ Banking Application
+# Banking Application
 
 ## Functional Requirements
 #### Account Management:
