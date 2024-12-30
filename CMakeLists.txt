@@ -3,9 +3,11 @@ cmake_minimum_required(VERSION 3.12)
 set(PROJECT Banking)
 
 set(HEADER_FILES 
+  tools.hpp
 )
 set(SOURCE_FILES 
-    )
+  tools.cpp
+)
 
 project(${PROJECT})
 

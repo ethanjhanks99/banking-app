@@ -2,7 +2,7 @@
 
 * Basic requirements
   * Tools
-    * This program will use SQLlite to store data
+    * This program will use PostgreSQL to store data
     * This program will use git for version control
   * As a user, I should be able to...
     * register a bank account

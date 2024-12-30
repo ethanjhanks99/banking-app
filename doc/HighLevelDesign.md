@@ -1,10 +1,14 @@
 # Bank Account Management Application High Level Design
 
+## Table of Contents
+* [Database](#database)
+  * [Tables](#tables)
+* [Authentication and Authorization](#authentication-and-authorization)
+  * [Registration](#registration)
+
 ## Database
-* Using SQLite3 with C++
-  * Use `#include <sqlite3.h>`
-  * [Link to examples](https://www.geeksforgeeks.org/sql-using-c-c-and-sqlite/)
-  * [Link to SQL commands](https://www.sqlitetutorial.net/sqlite-cheat-sheet/)
+* Using PostgreSQL with C++
+  * [Link to libpq++ dox](https://www.postgresql.org/docs/7.2/libpqplusplus.html)
 
 ### Tables
 * User
@@ -18,21 +22,28 @@
   * Password - hashed string
 * Accounts
   * AccountId - int
-  * UserId - int - many-to-many relationship with User
+  * OwnerId - int - Signifies who owns the account
+  * AuthorizedUsers - int - many-to-many relationship with User
   * AccountType - string
   * Balance - float
+* Transactions
+  * TransId - int
+  * AccountId - many-to-one relationship (Many transactions, one account)
+  * Amount - float
+  * Type - string
 
-### Authentication and Authorization
+## Authentication and Authorization
 * Authentication and Authorization will be implemented by two separate methods: one for registering an account, and one for logging into an account
-* SQLite will be used to manage user data and session information
+* PostgreSQL will be used to manage user data and session information
 
-#### Register
-* Information required for an account:
+### Registration and Authorization
+* Information required for an account (\* optional):
   * First name
   * Last name
   * Username
   * Password
   * Email
   * SSN
+  * Middle name \*
 * Password and SSN will be hashed to protect privacy in the event of a data leak
-*
+* 
